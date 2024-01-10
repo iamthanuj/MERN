@@ -119,6 +119,7 @@ export const goalSlice = createSlice({
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
+        console.error('Delete Goal Rejected:', action.payload);
       });
   },
 });
